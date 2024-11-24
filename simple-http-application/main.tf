@@ -14,23 +14,6 @@ provider "aws" {
     }
 
 
-/*
-
-resource "aws_instance" "server" {
-    
-    ami="ami-02a0945ba27a488b7"
-    
-    instance_type="t3.micro"
-    security_groups = [ data.aws_security_group.to_ssh.name]
-    associate_public_ip_address=true
-    key_name = "chatter-key"
-
-    user_data  = file("script.sh")
-    user_data_replace_on_change = true
-        
-}
-
-*/
 
 resource "aws_security_group" "name" {
 
