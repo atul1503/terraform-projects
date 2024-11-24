@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "my name is atul"
+echo "start of init script"
 cd /home/ec2-user
 yum install -y git
 yum install -y pip
